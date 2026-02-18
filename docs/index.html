@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VG8PGHTDKQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VG8PGHTDKQ');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Osaka Gomi Map - 日本のごみ分別をもっと簡単に</title>
     <meta
       name="description"
-      content="大阪から東京まで、日本全国のゴミ分別と収集日をサポート。これ一つでゴミ出しの悩み解決。"
+      content="大阪から東京まで、日本全国の有用なゴミ分別スケジュールとガイドを確認。外国人や居住者のための必須アプリ。"
     />
+    <link rel="canonical" href="https://gomi.survivalcoding.com" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gomi.survivalcoding.com" />
+    <meta property="og:title" content="Osaka Gomi Map - 日本のごみ分別をもっと簡単に" />
+    <meta property="og:description" content="日本居住者や外国人のためのごみ分別通知アプリ。大阪から東京まで、正確な地域の情報を提供します。" />
+    <meta property="og:image" content="https://gomi.survivalcoding.com/assets/hero.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://gomi.survivalcoding.com" />
+    <meta property="twitter:title" content="Osaka Gomi Map - 日本のごみ分別をもっと簡単に" />
+    <meta property="twitter:description" content="日本居住者や外国人のためのごみ分別通知アプリ。大阪から東京まで、正確な地域の情報を提供します。" />
+    <meta property="twitter:image" content="https://gomi.survivalcoding.com/assets/hero.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -18,6 +42,8 @@
       .gradient-text {
         background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
         -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -105,17 +131,13 @@
             <i data-lucide="play" class="w-6 h-6 fill-current"></i>
             <span>Google Playで手に入れる</span>
           </a>
-          <!-- <a href="#" class="group bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-3">
-                    <i data-lucide="monitor" class="w-6 h-6"></i>
-                    <span>Web版を見る</span>
-                </a> -->
         </div>
         
         <div class="mt-16 relative">
              <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-slate-50 to-transparent z-10"></div>
              <!-- App Screenshot -->
              <div class="relative rounded-[2.5rem] overflow-hidden w-full max-w-[300px] mx-auto border-[8px] border-slate-900 shadow-2xl">
-                 <img src="assets/hero.png" alt="App Main Screen" class="w-full h-auto block" />
+                 <img src="assets/hero.png" alt="Osaka Gomi Map アプリのメイン画面 - 日本のごみ分別スケジュール確認" class="w-full h-auto block" />
              </div>
         </div>
       </div>
@@ -172,17 +194,17 @@
     <section class="py-20 bg-slate-50 border-t border-slate-200">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12">アプリ画面</h2>
-            <div class="flex flex-wrap justify-center gap-8">
-                <div class="w-64 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white transform hover:scale-105 transition-transform duration-300">
-                    <img src="assets/screen1.png" alt="Screenshot 1" class="w-full h-auto" />
-                </div>
-                <div class="w-64 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white transform hover:scale-105 transition-transform duration-300">
-                    <img src="assets/screen2.png" alt="Screenshot 2" class="w-full h-auto" />
-                </div>
-                <div class="w-64 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white transform hover:scale-105 transition-transform duration-300">
-                    <img src="assets/screen3.png" alt="Screenshot 3" class="w-full h-auto" />
-                </div>
-            </div>
+                 <div class="flex flex-wrap justify-center gap-8">
+                     <div class="w-64 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white transform hover:scale-105 transition-transform duration-300">
+                         <img src="assets/screen1.png" alt="Osaka Gomi Map アプリのスクリーンショット - パーソナライズされたごみ収集スケジュール" class="w-full h-auto" />
+                     </div>
+                     <div class="w-64 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white transform hover:scale-105 transition-transform duration-300">
+                         <img src="assets/screen2.png" alt="Osaka Gomi Map アプリのスクリーンショット - 詳細な分別ガイド" class="w-full h-auto" />
+                     </div>
+                     <div class="w-64 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white transform hover:scale-105 transition-transform duration-300">
+                         <img src="assets/screen3.png" alt="Osaka Gomi Map アプリのスクリーンショット - プッシュ通知設定画面" class="w-full h-auto" />
+                     </div>
+                 </div>
         </div>
     </section>
 
@@ -224,11 +246,6 @@
             </div>
             <p class="text-sm">Make Japan Clean, Make Life Easy.</p>
           </div>
-          <!-- <div class="flex gap-8 text-sm">
-            <a href="#" class="hover:text-white transition-colors">利用規約</a>
-            <a href="#" class="hover:text-white transition-colors">プライバシーポリシー</a>
-            <a href="#" class="hover:text-white transition-colors">お問い合わせ</a>
-          </div> -->
         </div>
         <div class="border-t border-slate-800 mt-12 pt-8 text-center text-xs">
           © 2026 Osaka Gomi Map. All rights reserved.
